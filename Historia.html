@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros | Under Board Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="underogo.jpg" type="image/x-icon">
+    <style>
+        /* Usa los mismos estilos del index.html */
+        :root {
+            --color-negro: #0a0a0a;
+            --color-blanco: #F2F2F2;
+            --color-cafe: #8B4513;
+            --color-cafe-crema: #E3C9A5;
+            --color-gris: #1A1A1A;
+            --color-gris-claro: #2A2A2A;
+            --borde: 1px solid #333;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Archivo', sans-serif; }
+        body { background-color: var(--color-negro); color: var(--color-blanco); line-height: 1.6; }
+        header { background-color: var(--color-negro); padding: 1.5rem; border-bottom: var(--borde); }
+        .header-container { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-family: 'Archivo Black', sans-serif; font-size: 2rem; color: var(--color-blanco); text-transform: uppercase; letter-spacing: 3px; }
+        .logo span { color: var(--color-cafe-crema); }
+        nav ul { display: flex; list-style: none; gap: 2.5rem; }
+        nav ul li a { color: var(--color-blanco); text-decoration: none; font-weight: 500; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px; position: relative; padding: 0.5rem 0; }
+        nav ul li a::after { content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 2px; background-color: var(--color-cafe-crema); transition: width 0.3s ease; }
+        nav ul li a:hover::after { width: 100%; }
+        .main-section { max-width: 900px; margin: 5rem auto 0 auto; padding: 3rem 2rem; background: var(--color-gris); border-radius: 12px; box-shadow: 0 4px 32px rgba(0,0,0,0.15); border: var(--borde); }
+        .section-title { text-align: center; font-size: 3rem; color: var(--color-blanco); font-family: 'Archivo Black', sans-serif; text-transform: uppercase; letter-spacing: 3px; margin-bottom: 2rem; position: relative; padding-bottom: 1.5rem; }
+        .section-title::after { content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 100px; height: 3px; background-color: var(--color-cafe-crema); }
+        .about-content { font-size: 1.2rem; color: #ccc; line-height: 2; margin-bottom: 2.5rem; }
+        .about-values { display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center; margin-top: 3rem; }
+        .value-card { background: var(--color-gris-claro); border-radius: 8px; padding: 2rem; min-width: 220px; max-width: 300px; text-align: center; border: var(--borde); }
+        .value-card i { font-size: 2.5rem; color: var(--color-cafe-crema); margin-bottom: 1rem; }
+        .value-card h3 { color: var(--color-blanco); font-size: 1.3rem; margin-bottom: 0.8rem; text-transform: uppercase; letter-spacing: 1px; }
+        .value-card p { color: #aaa; font-size: 1rem; }
+        footer { background-color: var(--color-negro); color: var(--color-blanco); padding: 6rem 1rem 3rem; text-align: center; border-top: var(--borde); margin-top: 5rem; }
+        .copyright { margin-top: 2rem; color: #666; font-size: 0.9rem; letter-spacing: 1.5px; }
+        @media (max-width: 768px) {
+            .main-section { padding: 2rem 0.5rem; }
+            .section-title { font-size: 2rem; }
+            .about-values { flex-direction: column; align-items: center; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">UNDER<span>BOARD</span></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html#inicio">Inicio</a></li>
+                    <li><a href="index.html#skate">Skate</a></li>
+                    <li><a href="index.html#ropa">Ropa</a></li>
+                    <li><a href="index.html#video">Video</a></li>
+                    <li><a href="index.html#contacto">Contacto</a></li>
+                    <li><a href="Historia.html">Sobre Nosotros</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+
+    
+    <!-- Main Section -->
+    <section class="main-section">
+        <h1 class="section-title">Sobre Nosotros</h1>
+        <div class="about-content">
+            Under Board Shop nació de la pasión por el skate y el streetwear auténtico. Somos una tienda independiente dedicada a ofrecer productos de calidad para riders reales, apoyando la cultura local y el estilo de vida urbano.<br><br>
+            Nuestro equipo está formado por skaters y amantes de la moda urbana, comprometidos con brindar la mejor experiencia, asesoría y productos exclusivos. Creemos en la comunidad, la creatividad y el respeto por la calle.
+        </div>
+        <div class="about-values">
+            <div class="value-card">
+                <i class="fas fa-skating"></i>
+                <h3>Pasión por el Skate</h3>
+                <p>Vivimos el skateboarding cada día y seleccionamos productos que realmente funcionan en la calle y el parque.</p>
+            </div>
+            <div class="value-card">
+                <i class="fas fa-tshirt"></i>
+                <h3>Estilo Auténtico</h3>
+                <p>Ropa y accesorios pensados para quienes buscan destacar y sentirse cómodos patinando.</p>
+            </div>
+            <div class="value-card">
+                <i class="fas fa-users"></i>
+                <h3>Comunidad</h3>
+                <p>Apoyamos eventos, riders locales y colaboraciones para fortalecer la escena skater.</p>
+            </div>
+            <div class="value-card">
+                <i class="fas fa-handshake"></i>
+                <h3>Confianza</h3>
+                <p>Atención personalizada y asesoría honesta para que encuentres lo que realmente necesitas.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="copyright">
+            <p>&copy; 2025 UNDER BOARD SHOP. TODOS LOS DERECHOS RESERVADOS.</p>
+        </div>
+    </footer>
+</body>

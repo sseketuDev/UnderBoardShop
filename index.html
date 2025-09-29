@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Under Board Shop - Skate & Streetwear</title>
+    <title>Under Board Shop - Skate, Snowboard & Streetwear</title>
+    <meta name="description" content="Tienda especializada en skate, snowboard y ropa streetwear. Productos auténticos para riders reales.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="icon" href="iconunder.png" type="image/x-icon">
@@ -14,13 +15,14 @@
     <header>
         <div class="header-container">
             <div class="logo">UNDER<span>BOARD</span></div>
-            <div class="hamburger" id="hamburger">
+            <button class="hamburger" id="hamburger" aria-label="Abrir menú">
                 <i class="fas fa-bars"></i>
-            </div>
+            </button>
             <nav>
                 <ul id="nav-menu">
                     <li><a href="#inicio">Inicio</a></li>
                     <li><a href="#skate">Skate</a></li>
+                    <li><a href="#snowboard">Snowboard</a></li>
                     <li><a href="#ropa">Ropa</a></li>
                     <li><a href="#video">Video</a></li>
                     <li><a href="#contacto">Contacto</a></li>
@@ -43,9 +45,9 @@
         </div>
         <div class="hero-content">
             <h1>UNDER BOARD SHOP</h1>
-            <p>Todo lo que necesitas para el skateboarding y la mejor ropa para patinar. Productos auténticos para riders reales.</p>
             <div>
                 <a href="#skate" class="btn">Ver Skate</a>
+                <a href="#snowboard" class="btn">Ver Snowboard</a>
                 <a href="#ropa" class="btn">Ver Ropa</a>
                 <a href="Historia.html" class="btn">Sobre Nosotros</a>
             </div>
@@ -54,8 +56,12 @@
 
     <!-- Video Section -->
     <section class="video-section" id="video">
+        <div class="section-header">
+            <h2 class="section-title">Video</h2>
+            <!-- WhatsApp removed from la sección Video según solicitud -->
+        </div>
         <div class="video-container">
-            <div class="video-placeholder">
+            <div class="video-placeholder" role="button" tabindex="0" aria-label="Reproducir video">
                 <div class="play-button">
                     <i class="fas fa-play"></i>
                 </div>
@@ -63,9 +69,13 @@
             <p class="video-caption">Mira nuestra última sesión de skate</p>
         </div>
     </section>
-    <!-- Skate Section con imágenes referenciales -->
+
+    <!-- Skate Section -->
     <section class="categories" id="skate">
-        <h2 class="section-title">Productos de Skate</h2>
+        <div class="section-header">
+            <h2 class="section-title">Productos de Skate</h2>
+            <a class="section-whatsapp" href="#" data-phone="56993419216" data-text="Hola!%20Quisiera%20info%20sobre%20productos%20de%20skate%20en%20Under%20Board%20Shop."><i class="fab fa-whatsapp"></i> Preguntar</a>
+        </div>
         <div class="category-grid">
             <div class="category-card">
                 <div class="category-img">
@@ -75,71 +85,195 @@
                     <h3>Tablas</h3>
                     <p>Tablas de skate de las mejores marcas y diseños.</p>
                     <a href="#" class="btn">Ver más</a>
+                    <a href="https://wa.me/56993419216?text=Hola%2C%20quiero%20info%20sobre%20tablas%20en%20Under%20Board%20Shop" class="whatsapp-btn" target="_blank" aria-label="WhatsApp tablas">
+                        <i class="fab fa-whatsapp"></i> Consultar por Tablas
+                    </a>
                 </div>
             </div>
             
             <div class="category-card">
                 <div class="category-img">
-                    <img src="https://images.unsplash.com/photo-1621525142621-9ed471830cee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2thdGUlMjB3aGVlbHN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=80" alt="Ruedas de skate">
+                    <img src="https://img.redbull.com/images/c_crop,x_0,y_0,h_1590,w_1193/c_fill,w_450,h_600/q_auto,f_auto/redbullcom/2020/8/30/u8bbjmaoz6vdqrih6tet/ruedas-skate-oj-wheels" alt="Ruedas de skate">
                 </div>
                 <div class="category-info">
                     <h3>Ruedas</h3>
                     <p>Ruedas para todo tipo de superficies y estilos.</p>
                     <a href="#" class="btn">Ver más</a>
+                    <a href="https://wa.me/56993419216?text=Hola%2C%20quiero%20info%20sobre%20ruedas%20en%20Under%20Board%20Shop" class="whatsapp-btn" target="_blank" aria-label="WhatsApp ruedas">
+                        <i class="fab fa-whatsapp"></i> Consultar por Ruedas
+                    </a>
                 </div>
             </div>
             
             <div class="category-card">
                 <div class="category-img">
-                    <img src="https://images.unsplash.com/photo-1621525142437-2b3a3e0f2c2a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2thdGUlMjB0cnVja3N8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=80" alt="Trucks de skate">
+                    <img src="https://img.myshopline.com/image/store/1709089280487/independent-stage11-slayerpolished139-1.jpg?w=1024&h=1024" alt="Trucks de skate">
                 </div>
                 <div class="category-info">
                     <h3>Trucks</h3>
                     <p>Trucks resistentes para mayor estabilidad.</p>
                     <a href="#" class="btn">Ver más</a>
+                    <a href="https://wa.me/56993419216?text=Hola%2C%20quiero%20info%20sobre%20trucks%20en%20Under%20Board%20Shop" class="whatsapp-btn" target="_blank" aria-label="WhatsApp trucks">
+                        <i class="fab fa-whatsapp"></i> Consultar por Trucks
+                    </a>
                 </div>
             </div>
             
             <div class="category-card">
                 <div class="category-img">
-                    <img src="https://images.unsplash.com/photo-1621525142626-7c8c8c8c8c8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2thdGUlMjBiZWFyaW5nc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Rodamientos de skate">
+                    <img src="https://st2.depositphotos.com/6749096/11124/i/450/depositphotos_111248512-stock-photo-series-bearings-focus-on-the.jpg" alt="Rodamientos de skate">
                 </div>
                 <div class="category-info">
                     <h3>Rodamientos</h3>
                     <p>Rodamientos de alta calidad para mayor velocidad.</p>
                     <a href="#" class="btn">Ver más</a>
+                    <a href="https://wa.me/56993419216?text=Hola%2C%20quiero%20info%20sobre%20rodamientos%20en%20Under%20Board%20Shop" class="whatsapp-btn" target="_blank" aria-label="WhatsApp rodamientos">
+                        <i class="fab fa-whatsapp"></i> Consultar por Rodamientos
+                    </a>
                 </div>
             </div>
             
             <div class="category-card">
                 <div class="category-img">
-                    <img src="https://images.unsplash.com/photo-1621525142627-7c8c8c8c8c8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2thdGUlMjBoZWxtZXR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=80" alt="Cascos de skate">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_704416-MLC29336623086_022019-O-herramienta-skate-tool-t-llave-jigsaw-negra-laminates-supp.webp" alt="Cascos de skate">
                 </div>
                 <div class="category-info">
-                    <h3>Cascos</h3>
-                    <p>Cascos de protección para patinar con seguridad.</p>
+                    <h3>Varios</h3>
+                    <p>Objetos diversos para complementar tu equipo.</p>
                     <a href="#" class="btn">Ver más</a>
-                </div>
-            </div>
-            
-            <div class="category-card">
-                <div class="category-img">
-                    <img src="https://images.unsplash.com/photo-1621525142628-7c8c8c8c8c8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2thdGUlMjBidXNoaW5nc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Bushings de skate">
-                </div>
-                <div class="category-info">
-                    <h3>Bushings</h3>
-                    <p>Bushings para personalizar la respuesta de tus trucks.</p>
-                    <a href="#" class="btn">Ver más</a>
+                    <a href="https://wa.me/56993419216?text=Hola%2C%20quiero%20info%20sobre%20accesorios%20en%20Under%20Board%20Shop" class="whatsapp-btn" target="_blank" aria-label="WhatsApp varios">
+                        <i class="fab fa-whatsapp"></i> Consultar por Accesorios
+                    </a>
                 </div>
             </div>
         </div>
     </section>
+    
+    <!-- Sección de Snowboard Actualizada -->
+    <section class="snowboard-section" id="snowboard">
+        <div class="section-header">
+            <h2 class="section-title">Snowboard - Kits & Equipos</h2>
+            <a class="section-whatsapp" href="#" data-phone="56993419216" data-text="Hola!%20Quisiera%20info%20sobre%20los%20kits%20de%20snowboard."><i class="fab fa-whatsapp"></i> Preguntar</a>
+        </div>
+        
+        <div class="snowboard-container">
+            <p class="snowboard-intro">Kits completos de snowboard, equipos de seguridad y servicios de arriendo. Las medidas de las tablas dependen de la altura y peso de la persona, así como la talla del pie.</p>
 
-    <!-- Ropa Section con fotos grandes y botones de WhatsApp -->
+            <!-- Equipos de Seguridad para Avalanchas -->
+            <div class="safety-section">
+                <h3 class="safety-title">Equipos de Seguridad para Avalanchas</h3>
+                <div class="safety-grid">
+                    <div class="safety-item">
+                        <div class="safety-img">
+                            <img src="snowfoto.jpg" alt="Kit seguridad avalancha">
+                        </div>
+                        <div class="safety-info">
+                            <h4>Kit Seguridad Avalancha</h4>
+                            <p>Incluye pala, ARVA (aparato de búsqueda de víctimas de avalanchas) y sonda. Equipo esencial para salidas fuera de pista.</p>
+                            <a class="btn kit-whatsapp" href="#" data-phone="56993419216" data-text="Hola!%20Quisiera%20info%20del%20Kit%20de%20Seguridad%20para%20Avalanchas."><i class="fab fa-whatsapp"></i> Consultar Kit Seguridad</a>
+                        </div>
+                    </div>
+                    
+                    <div class="safety-item">
+                        <div class="safety-img">
+                            <img src="snowfoto2.jpg" alt="Mochila de seguridad">
+                        </div>
+                        <div class="safety-info">
+                            <h4>Mochila de Seguridad</h4>
+                            <p>Mochila especializada con airbag integrado para aumentar la flotabilidad en caso de avalancha.</p>
+                            <a class="btn kit-whatsapp" href="#" data-phone="56993419216" data-text="Hola!%20Quisiera%20info%20sobre%20mochilas%20de%20seguridad%20con%20airbag."><i class="fab fa-whatsapp"></i> Consultar Mochila</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Servicio de Arriendo -->
+            <div class="rental-section">
+                <h3 class="rental-title">Servicio de Arriendo</h3>
+                <div class="rental-grid">
+                    <div class="rental-item">
+                        <div class="rental-img">
+                            <img src="snowfoto3.jpg" alt="Arriendo equipo completo">
+                        </div>
+                        <div class="rental-info">
+                            <h4>Arriendo Equipo Completo</h4>
+                            <p><strong>Valor: $25.000</strong></p>
+                            <p>Incluye tabla, fijaciones y botas. Las medidas de la tabla dependen de la altura y peso de la persona, así como la talla del pie.</p>
+                            <a class="btn kit-whatsapp" href="#" data-phone="56993419216" data-text="Hola!%20Quisiera%20info%20sobre%20el%20arriendo%20de%20equipo%20completo%20de%20snowboard%20($25.000)."><i class="fab fa-whatsapp"></i> Consultar Arriendo</a>
+                        </div>
+                    </div>
+                    
+                    <div class="rental-item">
+                        <div class="rental-img">
+                            <img src="snowfoto5.jpg" alt="Accesorios de snowboard">
+                        </div>
+                        <div class="rental-info">
+                            <h4>Accesorios Adicionales</h4>
+                            <p>Pantalones, guantes, antiparras y casco. También disponibles chaquetas técnicas para condiciones extremas.</p>
+                            <a class="btn kit-whatsapp" href="#" data-phone="56993419216" data-text="Hola!%20Quisiera%20info%20sobre%20accesorios%20de%20snowboard%20(pantalones,%20guantes,%20antiparras,%20casco,%20chaquetas)."><i class="fab fa-whatsapp"></i> Consultar Accesorios</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tours y Clases -->
+            <div class="tour-section">
+                <h3 class="tour-title">Tours y Clases</h3>
+                <div class="tour-grid">
+                    <div class="tour-item">
+                        <div class="tour-img">
+                            <img src="massnow.jpg" alt="Tour básico con clase">
+                        </div>
+                        <div class="tour-info">
+                            <h4>Tour Básico con Clase</h4>
+                            <p>Incluye subida, clase introductoria y equipo básico. El costo del pase extra no está incluido.</p>
+                            <a class="btn kit-whatsapp" href="#" data-phone="56993419216" data-text="Hola!%20Quisiera%20info%20sobre%20el%20tour%20básico%20con%20clase%20de%20snowboard."><i class="fab fa-whatsapp"></i> Consultar Tour</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kits por Nivel (sin imágenes) -->
+            <div class="kits-section">
+                <h3 class="kits-title">Kits por Nivel</h3>
+                <div class="kits-grid">
+                    <div class="kit-item">
+                        <div class="kit-info">
+                            <h4>Kit Principiante</h4>
+                            <p>Tabla, fijaciones y botas pensadas para iniciar con confianza. Perfecto para primeros descensos.</p>
+                            <a class="btn kit-whatsapp" href="#" data-phone="56993419216" data-text="Hola!%20Quisiera%20info%20del%20Kit%20Principiante%20de%20snowboard."><i class="fab fa-whatsapp"></i> Consultar</a>
+                        </div>
+                    </div>
+                    
+                    <div class="kit-item">
+                        <div class="kit-info">
+                            <h4>Kit Intermedio</h4>
+                            <p>Rendimiento y versatilidad para avanzar en técnica. Ideal para riders con experiencia básica.</p>
+                            <a class="btn kit-whatsapp" href="#" data-phone="56993419216" data-text="Hola!%20Quisiera%20info%20del%20Kit%20Intermedio%20de%20snowboard."><i class="fab fa-whatsapp"></i> Consultar</a>
+                        </div>
+                    </div>
+                    
+                    <div class="kit-item">
+                        <div class="kit-info">
+                            <h4>Kit Avanzado</h4>
+                            <p>Componentes de alta gama para máxima respuesta. Diseñado para expertos que buscan máximo control.</p>
+                            <a class="btn kit-whatsapp" href="#" data-phone="56993419216" data-text="Hola!%20Quisiera%20info%20del%20Kit%20Avanzado%20de%20snowboard."><i class="fab fa-whatsapp"></i> Consultar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </section>
+
+    <!-- Ropa Section -->
     <section class="clothing" id="ropa">
-        <div class="clothing-container">
+        <div class="section-header">
             <h2 class="section-title">Ropa</h2>
-            
+            <a class="section-whatsapp" href="#" data-phone="56993419216" data-text="Hola!%20Quisiera%20info%20sobre%20la%20ropa%20de%20Under%20Board%20Shop."><i class="fab fa-whatsapp"></i> Preguntar</a>
+        </div>
+        <div class="clothing-container">
+            <h2 class="section-title sr-only">Ropa</h2>
             <div class="clothing-grid">
                 <!-- Poleras -->
                 <div class="clothing-item">
@@ -149,7 +283,6 @@
                     <div class="clothing-info">
                         <h3>Poleras</h3>
                         <p>Nuestra colección de poleras skater está diseñada para la máxima comodidad y estilo. Confeccionadas con algodón de alta calidad y estampados únicos que reflejan la auténtica cultura del skate.</p>
-                        <span class="price">Desde $00000</span>
                         <a href="https://wa.me/56993419216?text=Hola!%20Estoy%20interesado%20en%20las%20poleras%20de%20Under%20Board%20Shop" class="whatsapp-btn" target="_blank">
                             <i class="fab fa-whatsapp"></i> Consultar por Poleras
                         </a>
@@ -164,7 +297,6 @@
                     <div class="clothing-info">
                         <h3>Polerones</h3>
                         <p>Polerones cómodos y con estilo para tus sesiones de skate. Diseñados con materiales que te mantienen abrigado sin limitar tu movimiento, perfectos para patinar en cualquier clima.</p>
-                        <span class="price">Desde $000</span>
                         <a href="https://wa.me/56993419216?text=Hola!%20Estoy%20interesado%20en%20los%20polerones%20de%20Under%20Board%20Shop" class="whatsapp-btn" target="_blank">
                             <i class="fab fa-whatsapp"></i> Consultar por Polerones
                         </a>
@@ -179,7 +311,6 @@
                     <div class="clothing-info">
                         <h3>Pantalones</h3>
                         <p>Pantalones diseñados específicamente para skaters, con mayor resistencia en las áreas de mayor desgaste y flexibilidad para movimientos amplios. Disponibles en diversos cortes y estilos.</p>
-                        <span class="price">Desde $00000</span>
                         <a href="https://wa.me/56993419216?text=Hola!%20Estoy%20interesado%20en%20los%20pantalones%20de%20Under%20Board%20Shop" class="whatsapp-btn" target="_blank">
                             <i class="fab fa-whatsapp"></i> Consultar por Pantalones
                         </a>
@@ -194,7 +325,6 @@
                     <div class="clothing-info">
                         <h3>Gorros & Beanies</h3>
                         <p>Completa tu look con nuestros gorros y beanies. Desde clásicos gorros planos hasta beanies abrigados para los días fríos, todos con el estilo característico de Under Board Shop.</p>
-                        <span class="price">Desde $00000</span>
                         <a href="https://wa.me/56993419216?text=Hola!%20Estoy%20interesado%20en%20gorros%20y%20beanies%20de%20Under%20Board%20Shop" class="whatsapp-btn" target="_blank">
                             <i class="fab fa-whatsapp"></i> Consultar por Gorros
                         </a>
@@ -209,7 +339,6 @@
                     <div class="clothing-info">
                         <h3>Accesorios</h3>
                         <p>Descubre nuestra selección de accesorios: mochilas, gorras, joyería y más. Cada pieza está cuidadosamente seleccionada para complementar tu estilo skater y ofrecerte la mejor funcionalidad.</p>
-                        <span class="price">Desde $00000</span>
                         <a href="https://wa.me/56993419216?text=Hola!%20Estoy%20interesado%20en%20accesorios%20de%20Under%20Board%20Shop" class="whatsapp-btn" target="_blank">
                             <i class="fab fa-whatsapp"></i> Consultar por Accesorios
                         </a>
@@ -219,71 +348,89 @@
         </div>
     </section>
 
-    <!-- Ubicación y cómo llegar -->
-    <section class="location-section" style="background: var(--color-gris); padding: 4rem 1rem; border-top: var(--borde); display: flex; flex-wrap: wrap; gap: 3rem; justify-content: center; align-items: flex-start;">
-        <div class="map-container" style="flex: 1 1 350px; min-width: 320px; max-width: 500px;">
+    <!-- Ubicación -->
+    <section class="location-section" id="ubicacion">
+        <div class="section-header">
+            <h2 class="section-title">Ubicación</h2>
+            <a class="section-whatsapp" href="#" data-phone="56993419216" data-text="Hola!%20Quisiera%20saber%20cómo%20llego%20a%20Under%20Board%20Shop%20(Yungay%2099)."><i class="fab fa-whatsapp"></i> Preguntar</a>
+        </div>
+
+        <div class="map-container">
             <iframe 
-  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.869036462736!2d-70.65188892426604!3d-33.43107397366846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5a5e0b5c1a7%3A0x1b8e5b8b5b8b5b8b!2sYungay%2099%2C%20Santiago%2C%20Regi%C3%B3n%20Metropolitana%2C%20Chile!5e0!3m2!1ses!2scl!4v1716321234567!5m2!1ses!2scl"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.869036462736!2d-70.65188892426604!3d-33.43107397366846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5a5e0b5c1a7%3A0x1b8e5b8b5b8b5b8b!2sYungay%2099%2C%20Santiago%2C%20Regi%C3%B3n%20Metropolitana%2C%20Chile!5e0!3m2!1ses!2scl!4v1716321234567!5m2!1ses!2scl"
                 width="100%" 
                 height="320" 
                 style="border-radius:12px; border:1px solid #333;" 
                 allowfullscreen="" 
                 loading="lazy" 
-                referrerpolicy="no-referrer-when-downgrade">
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Ubicación de Under Board Shop en Yungay #99, Santiago">
             </iframe>
         </div>
-        <div class="address-info" style="flex: 1 1 350px; min-width: 320px; max-width: 500px;">
-            <h2 style="font-family:'Archivo Black',sans-serif; color:var(--color-blanco); font-size:2rem; margin-bottom:1rem;">¿Cómo llegar?</h2>
-            <div class="address-details" style="margin-bottom:1.5rem;">
-                <p style="font-size:1.1rem; margin-bottom:0.5rem;"><span style="font-size:1.3rem;">📍</span> <strong>Dirección:</strong> Yungay #99, esquina Carlos Condell</p>            </div>
-            <div class="transport-info" style="margin-bottom:1.5rem;">
-            </div>
-            <div style="margin-top:20px;">
-                <img src="tienda-yungay.jpg" alt="Foto de la tienda Under Board Shop en Yungay" style="width:100%; border-radius:10px; box-shadow:0 4px 15px rgba(0,0,0,0.12);">
-                <p style="margin-top:10px; color:#aaa;">Vista de la tienda y su entorno en Yungay #99, esquina Carlos Condell.</p>
-            </div>
+        <div class="address-info">
+            <h2 class="sr-only">Cómo llegar</h2>
+           
         </div>
     </section>
 
     <!-- Footer -->
-    <footer id="contacto">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Under Board Shop</h3>
-                <p>Tu tienda de skate y ropa skater de confianza con los mejores productos y precios.</p>
+    <footer id="contacto" class="site-footer" role="contentinfo" aria-label="Pie de página">
+        <div class="footer-inner">
+            <div class="footer-section about">
+                <div class="logo">UNDER<span>BOARD</span></div>
+                <p class="footer-desc">Tu tienda de skate, snowboard y ropa skater de confianza. Productos auténticos para riders reales.</p>
             </div>
-            
-            <div class="footer-section">
-                <h3>Contacto</h3>
-                <p><i class="fas fa-phone"></i> +56 9 9341 9216</p>
-                <p><i class="fas fa-envelope"></i> info@underboard.cl</p>
-                <p><i class="fas fa-map-marker-alt"></i> Yungay #99 esquina Carlos Condell</p>
+
+            <div class="footer-section contact" aria-label="Información de contacto">
+                <h4>Contacto</h4>
+                <p><i class="fas fa-phone" aria-hidden="true"></i> <a href="tel:+56993419216">+56 9 9341 9216</a></p>
+                <p><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:info@underboard.cl">info@underboard.cl</a></p>
+                <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Yungay #99, esquina Carlos Condell</p>
+                <p class="hours"><strong>Horario:</strong> Lun - Vie 11:00 - 20:00 · Sáb 11:00 - 14:00</p>
             </div>
-            
-            <div class="footer-section">
-                <h3>Enlaces Rápidos</h3>
-                <a href="#inicio">Inicio</a>
-                <a href="#skate">Skate</a>
-                <a href="#ropa">Ropa</a>
-                <a href="#video">Video</a>
-                <a href="#contacto">Contacto</a>
+
+            <div class="footer-section links" aria-label="Enlaces rápidos">
+                <h4>Enlaces Rápidos</h4>
+                <nav>
+                    <a href="#inicio">Inicio</a>
+                    <a href="#skate">Skate</a>
+                    <a href="#snowboard">Snowboard</a>
+                    <a href="#ropa">Ropa</a>
+                    <a href="#video">Video</a>
+                    <a href="#contacto">Contacto</a>
+                </nav>
             </div>
-            
-            <div class="footer-section">
-                <h3>Síguenos</h3>
-                <div class="social-icons">
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-tiktok"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
+
+            <div class="footer-section social" aria-label="Redes sociales">
+                <h4>Síguenos</h4>
+                <div class="social-icons" role="list">
+                    <a href="#" aria-label="Instagram" role="listitem"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook" role="listitem"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="TikTok" role="listitem"><i class="fab fa-tiktok"></i></a>
+                    <a href="#" aria-label="YouTube" role="listitem"><i class="fab fa-youtube"></i></a>
+                </div>
+
+                <div class="whatsapp-mini-wrap" aria-hidden="false">
+                    <a class="whatsapp-mini" href="https://wa.me/56993419216?text=Hola!%20Quisiera%20más%20info%20sobre%20Under%20Board%20Shop" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+                        <i class="fab fa-whatsapp"></i> Escríbenos
+                    </a>
                 </div>
             </div>
         </div>
-        
-        <div class="copyright">
-            <p>&copy; 2023 UNDER BOARD SHOP. TODOS LOS DERECHOS RESERVADOS.</p>
+
+        <div class="footer-bottom" role="note">
+            <p>&copy; <span id="year">2025</span> UNDER BOARD SHOP. TODOS LOS DERECHOS RESERVADOS.</p>
         </div>
     </footer>
+
+    <!-- Botón flotante de WhatsApp -->
+    <div class="whatsapp-float" id="whatsapp-float" aria-label="Abrir chat de WhatsApp" title="Escríbenos por WhatsApp">
+        <a href="https://wa.me/56993419216?text=Hola!%20Quisiera%20más%20info%20sobre%20Under%20Board%20Shop" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+            <span class="sr-only">WhatsApp</span>
+        </a>
+        <span class="pulse" aria-hidden="true"></span>
+    </div>
 
     <script>
         // Menu Hamburguesa
@@ -292,12 +439,14 @@
         
         hamburger.addEventListener('click', () => {
             navMenu.classList.toggle('active');
+            hamburger.setAttribute('aria-expanded', navMenu.classList.contains('active'));
         });
         
         // Cerrar menú al hacer clic en un enlace
         document.querySelectorAll('nav ul li a').forEach(link => {
             link.addEventListener('click', () => {
                 navMenu.classList.remove('active');
+                hamburger.setAttribute('aria-expanded', 'false');
             });
         });
         
@@ -305,6 +454,53 @@
         document.querySelector('.video-placeholder').addEventListener('click', function() {
             alert('Aquí se insertaría un video real. En una implementación real, se abriría un modal con el video.');
         });
+        
+        // Manejo de teclado para accesibilidad
+        document.querySelector('.video-placeholder').addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                this.click();
+            }
+        });
+    </script>
+    
+    <!-- Script para manejo de WhatsApp -->
+    <script>
+    // Manejo centralizado solo para botones de producto / secciones (kit-whatsapp, whatsapp-btn, section-whatsapp)
+    document.addEventListener('click', function(e){
+        const btn = e.target.closest('.kit-whatsapp, .whatsapp-btn, .section-whatsapp');
+        if(!btn) return;
+        e.preventDefault();
+
+        // número por defecto
+        const defaultPhone = '56993419216';
+
+        // obtener teléfono desde data-phone o desde href (wa.me/...)
+        let phone = btn.dataset.phone || defaultPhone;
+        if(!btn.dataset.phone){
+            const href = btn.getAttribute('href') || '';
+            const m = href.match(/wa\.me\/(\d{6,})/);
+            if(m) phone = m[1];
+        }
+
+        // obtener texto desde data-text o desde href ?text=...
+        let text = btn.dataset.text || '';
+        if(!text){
+            const href = btn.getAttribute('href') || '';
+            const q = href.match(/[?&]text=([^&]+)/);
+            if(q) text = decodeURIComponent(q[1]);
+        }
+
+        // asegurar texto codificado en URI
+        if(text && !/%[0-9A-Fa-f]{2}/.test(text)) {
+            text = encodeURIComponent(text);
+        } else if (!text) {
+            text = encodeURIComponent('Hola! Quisiera más info.');
+        }
+
+        const url = `https://wa.me/${phone}?text=${text}`;
+        window.open(url, '_blank');
+    });
     </script>
 </body>
 </html>
